@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfume Company</title>
+<style>
+/* Add your CSS styles here */
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Perfume Company</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="background">
+        <!-- Add attractive background here -->
+    </div>
+</section>
+
+<section id="products">
+    <h2>Perfume Products</h2>
+    <div class="product">
+        <img src="perfume1.jpg" alt="Perfume Men 1">
+        <p>AZZARO Chrome Eau de Toilette Spray for Men by Azzaro</p>
+        <p>More specific details here...</p>
+    </div>
+    <!-- Repeat the above structure for other perfume products -->
+</section>
+
+<footer>
+    <div class="gender">
+        <p>Perfume for Men</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Perfume Company</p>
+    </div>
+</footer>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <h3>Send us a message</h3>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <label for="message">Your Message:</label>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" onclick="submitForm()">Submit</button>
+    </form>
+</section>
+
+<script>
+function submitForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    alert('Form submitted! Name: ' + name + ', Email: ' + email + ', Message: ' + message);
+}
+</script>
+
+</body>
+</html>
